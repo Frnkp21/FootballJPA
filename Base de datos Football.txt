@@ -1,0 +1,40 @@
+DROP DATABASE IF EXISTS football;
+CREATE DATABASE IF NOT EXISTS football;
+
+\c football
+
+CREATE TABLE IF NOT EXISTS Team (
+    code INT PRIMARY KEY,
+    name VARCHAR(50),
+    stadium VARCHAR(50),
+    city VARCHAR(255)
+);
+
+CREATE TABLE IF NOT EXISTS MatchInfo (
+    match_id INT PRIMARY KEY,
+    played_date DATE,
+    code_home INT,
+    code_away INT,
+    UNIQUE (code_home, code_away, played_date),
+    FOREIGN KEY (code_home) REFERENCES Team(code),
+    FOREIGN KEY (code_away) REFERENCES Team(code)
+);
+
+CREATE TABLE IF NOT EXISTS Player (
+    player_id INT PRIMARY KEY,
+    surname VARCHAR(50),
+    forename VARCHAR(50)
+);
+
+CREATE TABLE IF NOT EXISTS Plays (
+    match_id INT,
+    player_id INT,
+    starts INT,
+    substituted INT,
+    goals INT,
+    yellow INT,
+    red BOOLEAN,
+    PRIMARY KEY (match_id, player_id),
+    FOREIGN KEY (match_id) REFERENCES MatchInfo(match_id),
+    FOREIGN KEY (player_id) REFERENCES Player(player_id)
+);
