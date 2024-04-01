@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+                                 http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+             version="2.1">
+    <persistence-unit name="football">
+        <class>Entities.Team</class>
+        <class>Entities.MatchInfo</class>
+        <class>Entities.Player</class>
+        <class>Entities.Plays</class>
+        <properties>
+            <!-- Cambiar la URL JDBC para PostgreSQL -->
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/football"/>
+            <!-- Cambiar el usuario y contraseña de PostgreSQL -->
+            <property name="javax.persistence.jdbc.user" value="postgres"/>
+            <property name="javax.persistence.jdbc.password" value="postgres"/>
+            <!-- Especificar el controlador JDBC de PostgreSQL -->
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <!-- Dialecto de Hibernate para PostgreSQL -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+            <!-- Otras propiedades de Hibernate -->
+            <!-- Mostrar SQL generado por Hibernate -->
+            <property name="hibernate.show_sql" value="true"/>
+            <!-- Actualizar el esquema automáticamente -->
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+        </properties>
+    </persistence-unit>
+</persistence>

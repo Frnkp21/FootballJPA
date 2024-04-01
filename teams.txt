@@ -1,0 +1,20 @@
+1, Los Relámpagos Rojos, Estadio Fulgor, Ciudad Fulminante
+2, Los Halcones Plateados, Estadio Celeste, Ciudad Argéntea
+3, Los Lobos Blancos, Estadio Luna Llena, Ciudad Lunar
+4, Los Titanes de Hierro, Estadio Colosal, Ciudad Metálica
+5, Los Dragones Azules, Estadio Cielo Profundo, Ciudad Draco
+6, Los Centauros Veloces, Estadio Galope, Ciudad Centauri
+7, Los Águilas Doradas, Estadio Horizonte, Ciudad Alada
+8, Los Guerreros del Sol, Estadio Resplandor, Ciudad Solar
+9, Los Fantasmas Púrpuras, Estadio Espectral, Ciudad Eterea
+10, Los Tigres de Fuego, Estadio Ardiente, Ciudad Ignis
+11, Los Centinelas del Bosque, Estadio Frondoso, Ciudad Verde
+12, Los Escorpiones Negros, Estadio Veneno, Ciudad Sombra
+13, Los Grifos Dorados, Estadio Altura, Ciudad Aérea
+14, Los Lobos Plateados, Estadio Luna Llena, Ciudad Plateada
+15, Los Dragones de Jade, Estadio Dragón, Ciudad Esmeralda
+16, Los Cíclopes Rugientes, Estadio Colosal, Ciudad Trovadora
+17, Los Tigres del Trueno, Estadio Rugido, Ciudad Eléctrica
+18, Los Águilas Celestiales, Estadio Alado, Ciudad Celestial
+19, Los Fantasmas Azules, Estadio Espíritu, Ciudad Eterna
+20, Los Caballeros de la Aurora, Estadio Brillante, Ciudad Aurora
